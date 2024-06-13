@@ -3,57 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Barre de Navigation en Bas</title>
-    <!-- Lien vers le fichier CSS externe -->
-    <link rel="stylesheet" href="index.css">
-    <!-- Ajoutez un lien vers les icônes de police FontAwesome ou autre -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>The Surfing Project</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .hero {
+            background: url('https://images.unsplash.com/photo-1517699418036-fb5d179fef0c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c3VyZmluZ3xlbnwwfHwwfHx8MA%3D%3D') no-repeat center center;
+            background-size: cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+        .hero button {
+            margin: 5px;
+        }
+        .icon-section .icon {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+        .pricing .card {
+            margin: 10px 0;
+        }
+    </style>
 </head>
 <body>
 
-     <!-- Barre supérieure -->
-     <div class="top-bar">
-        <div class="icons">
-            <i class="fas fa-bell fa-2x"></i>
-            <span class="cercle">A</span>
-        </div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">The Surfing Project</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Accueil</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Le programme</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Nos prochaines sessions</a>
+            </li>
+        </ul>
     </div>
-   
-    <div class="content">
-        <span style="color: #4285f4; font-size: 36px; margin-top: 80px;">G</span>
-        <span style="color: #ea4335; font-size: 36px; margin-top: 80px;">o</span>
-        <span style="color: #fbbc05; font-size: 36px; margin-top: 80px;">o</span>
-        <span style="color: #4285f4; font-size: 36px; margin-top: 80px;">g</span>
-        <span style="color: #34a853; font-size: 36px; margin-top: 80px;">l</span>
-        <span style="color: #ea4335; font-size: 36px; margin-top: 80px;">e</span>
-    </div>
-    
-    <!-- Conteneur de recherche -->
-    <div class="search-container">
-        <div class="search-bar">
-            <!-- Champ de recherche -->
-            <input type="text" placeholder="Rechercher" class="search-input">
-            <!-- Icône du micro -->
-            <i class="fas fa-microphone"></i>
-            <!-- Icône de la caméra -->
-            <i class="fas fa-camera"></i>
-        </div>
-    </div>
+</nav>
 
-    <!-- Barre de navigation en bas -->
-    <div class="navbar">
-        <a href="#discover" class="active">
-            <i class="fas fa-compass"></i>
-            <span>Discover</span>
-        </a>
-        <a href="#search">
-            <i class="fas fa-search"></i>
-            <span>Rechercher</span>
-        </a>
-        <a href="#saved">
-            <i class="fas fa-bookmark"></i>
-            <span>Enregistré</span>
-        </a>
+<header class="hero">
+    <div>
+        <h1>Partez à l'aventure</h1>
+        <p>Découvrez notre école de surf en peer-learning</p>
+        <button class="btn btn-primary">Je m'inscris à la prochaine session</button>
+        <button class="btn btn-secondary">Je découvre le programme</button>
     </div>
+</header>
+
+<section class="container text-center my-5">
+    <h2>The Surfing Project en 3 points</h2>
+    <div class="row icon-section">
+        <div class="col-md-4">
+            <div class="icon">🎓</div>
+            <h3>Pas chère</h3>
+            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod...</p>
+        </div>
+        <div class="col-md-4">
+            <div class="icon">🛋️</div>
+            <h3>Relax</h3>
+            <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula...</p>
+        </div>
+        <div class="col-md-4">
+            <div class="icon">👥</div>
+            <h3>La communauté</h3>
+            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in...</p>
+        </div>
+    </div>
+</section>
+
+<section class="container my-5">
+    <h2 class="text-center">Témoignages</h2>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card mb-3">
+                <img src="https://images.unsplash.com/photo-1502680390469-be75c86b636f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c3VyZnxlbnwwfHwwfHx8MA%3D%3D" class="card-img-top" alt="Surfing">
+                <div class="card-body">
+                    <p class="card-text">Surfing's not a sport, it's a way of life, it's no hobby. It's a way of looking at that wave and saying, "Hey bud, let's party!"</p>
+                    <p class="card-text"><small class="text-muted">Jeff, Avril 2019</small></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card mb-3">
+                <img src="https://images.unsplash.com/photo-1537519646099-335112f03225?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8c3VyZnxlbnwwfHwwfHx8MA%3D%3D" class="card-img-top" alt="Van and Surfboards">
+                <div class="card-body">
+                    <p class="card-text">Grâce à TSP je fais le tour du monde avec mon van et fais du surf ! Si l'expérience était à refaire je le referais plein de fois.</p>
+                    <p class="card-text"><small class="text-muted">Jean-Michel, Octobre 2018</small></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container my-5 text-center pricing">
+    <h2>Prix</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Semaine d'essai</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">0€</h6>
+                    <p class="card-text">Le kiff<br>À Bali<br>Pendant 1 semaine</p>
+                    <a href="#" class="btn btn-primary">S'inscrire</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Early Bird</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">15€</h6>
+                    <p class="card-text">Le kiff<br>À Bali<br>Pendant 12 semaines</p>
+                    <a href="#" class="btn btn-primary">S'inscrire</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">En trois fois</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">7€/mo</h6>
+                    <p class="card-text">Le kiff<br>À Bali<br>Pendant 12 semaines</p>
+                    <a href="#" class="btn btn-primary">S'inscrire</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="text-center py-4">
+    <p>© Bootstrap, et The Surfing Project</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
